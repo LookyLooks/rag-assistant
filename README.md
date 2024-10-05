@@ -70,6 +70,8 @@ The project is designed to demonstrate how a single AI agent can utilize a serie
 3. **Extract Text Using SeleniumBase**:
    - The agent uses `seleniumbase_loader_tool` to extract text from a specific CSS selector and save it to a file.
 
+   > **Note:** The CSS selector for text extraction was obtained using the **Automa Chrome extension**, a browser tool that allows quick identification of elements on a webpage.
+
 4. **Load and Save the Documents**:
    - The agent loads the saved text file into a local index using LlamaIndex for subsequent queries.
 
@@ -88,6 +90,9 @@ The project is designed to demonstrate how a single AI agent can utilize a serie
 4. Load the document into LlamaIndex.
 5. Save and load the index for querying.
 6. Query the index for specific information, like benefits of structured outputs.
+
+## Query Example Before Final Response
+**User Query**: `Query the index for the Environment set up and return the code.`
 
 ## Final Response for Query
 I have successfully queried the index for the "Environment set up" information. Based on the response, I can provide you with the code for the environment setup. Here's the relevant code snippet:

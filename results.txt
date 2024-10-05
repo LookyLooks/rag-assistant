@@ -1,0 +1,308 @@
+(rag_assistant) looky@192 Rag_Assistant % python main.py          
+Welcome to the Terminal Chat Interface! (Type 'exit' to quit)
+You: look up openai cookbook example on structured outputs
+
+==================================================
+User Message: look up openai cookbook example on structured outputs
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text='<thinking>\nTo look up the OpenAI cookbook example on structured outputs, I can use the `brave_search` tool to search for relevant web pages. The required parameter for `brave_search` is:\n\n- `query`: This can be provided based on the user\'s request - something like "openai cookbook structured outputs example"\n\nOnce I have the search results, I can scan through them to find the most relevant page that contains the actual example code. If I find a promising result, I can use the `summarize_web_page` tool to generate a concise summary of the key points. The required parameter for `summarize_web_page` is:\n\n- `url`: This will come from the URL of the most relevant search result.\n\nSo the high-level steps are:\n1. Use `brave_search` to find relevant pages \n2. Identify the most promising result that likely contains the example code\n3. Use `summarize_web_page` on that URL to extract a summary\n\nNo other tools seem necessary, and I have all the required parameters to proceed with these steps. \n</thinking>', type='text'), ToolUseBlock(id='toolu_01BKqgzA1DPt33yHWjr1pXih', input={'query': 'openai cookbook structured outputs example'}, name='brave_search', type='tool_use')]
+
+Tool Used: brave_search
+Tool Input: {'query': 'openai cookbook structured outputs example'}
+Tool Result: Title: Introduction to Structured Outputs | OpenAI Cookbook
+Description: <strong>Structured</strong> <strong>Outputs</strong> is a new capability in the Chat Completions API and Assistants API that guarantees the model will always generate responses that adhere to your supplied JSON Schema. In this <strong>cookbook</strong>, we will illustrate this capability with a few <strong>examples</strong>.
+URL: https://cookbook.openai.com/examples/structured_outputs_intro
+
+Title: OpenAI Cookbook
+Description: Open-source <strong>examples</strong> and guides for building with the <strong>OpenAI</strong> API. Browse a collection of snippets, advanced techniques and walkthroughs. Share your own <strong>examples</strong> and guides.
+URL: https://cookbook.openai.com/
+
+Title: Structured Outputs for Multi-Agent Systems | OpenAI Cookbook
+Description: Open-source <strong>examples</strong> and guides for building with the <strong>OpenAI</strong> API. Browse a collection of snippets, advanced techniques and walkthroughs. Share your own <strong>examples</strong> and guides.
+URL: https://cookbook.openai.com/examples/structured_outputs_multi_agent
+
+Title: openai-cookbook/examples/Structured_Outputs_Intro.ipynb at main · openai/openai-cookbook
+Description: <strong>Examples</strong> and guides for using the <strong>OpenAI</strong> API. Contribute to <strong>openai</strong>/<strong>openai</strong>-<strong>cookbook</strong> development by creating an account on GitHub.
+URL: https://github.com/openai/openai-cookbook/blob/main/examples/Structured_Outputs_Intro.ipynb
+
+Title: Introducing Structured Outputs in the API
+Description: Our work to create safe and beneficial AI requires a deep understanding of the potential risks and benefits, as well as careful consideration of the impact · We research generative models and how to align them with human values
+URL: https://openai.com/index/introducing-structured-outputs-in-the-api/
+
+Title: Structured Outputs
+Description: Explore developer resources, tutorials, API docs, and dynamic <strong>examples</strong> to get the most out of <strong>OpenAI</strong>&#x27;s platform.
+URL: https://platform.openai.com/docs/guides/structured-outputs
+
+Title: Using chained calls for o1 structured outputs | OpenAI Cookbook
+Description: Open-source <strong>examples</strong> and guides for building with the <strong>OpenAI</strong> API. Browse a collection of snippets, advanced techniques and walkthroughs. Share your own <strong>examples</strong> and guides.
+URL: https://cookbook.openai.com/examples/o1/using_chained_calls_for_o1_structured_outputs
+
+Title: Structured Outputs in the API | Hacker News
+Description: We use GPT-4o to build dynamic UI+code[0], and almost all of our calls are using JSON mode. Previously it mostly worked, but we had to do some massaging on our end (backtick removal, etc.) · With that said, this will be great for GPT-4o-mini, as it often struggles/forgets to format things as we ask
+URL: https://news.ycombinator.com/item?id=41173223
+
+Title: Observe OpenAI Structured Outputs with Langfuse - Langfuse
+Description: In this <strong>cookbook</strong> you will learn how to use Langfuse to monitor <strong>OpenAI</strong> <strong>Structured</strong> <strong>Outputs</strong>.
+URL: https://langfuse.com/docs/integrations/openai/python/structured-outputs
+
+Title: GitHub - openai/openai-cookbook: Examples and guides for using the OpenAI API
+Description: <strong>Examples</strong> and guides for using the <strong>OpenAI</strong> API. Contribute to <strong>openai</strong>/<strong>openai</strong>-<strong>cookbook</strong> development by creating an account on GitHub.
+URL: https://github.com/openai/openai-cookbook
+
+Title: [FEATURE] https://github.com/openai/openai-cookbook/blob/457f4310700f93e7018b1822213ca99c613dbd1b/examples/Structured_Outputs_Intro.ipynb#L36 · Issue #1398 · openai/openai-cookbook
+Description: In <strong>openai</strong>-<strong>cookbook</strong>/<strong>examples</strong>/<strong>Structured</strong>_<strong>Outputs</strong>_Intro.ipynb Line 36 in 457f431 &quot;- Getting <strong>structured</strong> answers to display them in a specific way in a UI (<strong>example</strong> 1 in this <strong>cookbook</strong>)\n&quot;, Ther...
+URL: https://github.com/openai/openai-cookbook/issues/1398
+
+Title: Welcome To Instructor - Instructor
+Description: You can also check out our <strong>cookbooks</strong> and concepts to learn more about how to use Instructor. Make sure you&#x27;ve installed the dependencies for your specific client · To keep the bundle size small, instructor only ships with the <strong>OpenAI</strong> client. Before using the other clients and their respective from_xx method, make sure you&#x27;ve installed the dependencies following the instructions below. ... We&#x27;ve added support for <strong>OpenAI</strong>&#x27;<strong>s</strong> <strong>structured</strong> <strong>output</strong> ...
+URL: https://python.useinstructor.com/
+
+Title: Structured Outputs Deep-dive - API - OpenAI Developer Forum
+Description: Hi! I made an article that tries to provide a concise deep-dive into <strong>structured</strong> <strong>outputs</strong> and their usage through <strong>OpenAI</strong>’s ChatCompletions API. It is based on my own usage and various threads I’ve been involved with in these forums. Article is available here: Diving Deeper with <strong>Structured</strong> ...
+URL: https://community.openai.com/t/structured-outputs-deep-dive/930169
+
+Title: openai-cookbook/examples/gpt4o/introduction_to_gpt4o.ipynb at main · openai/openai-cookbook
+Description: <strong>Examples</strong> and guides for using the <strong>OpenAI</strong> API. Contribute to <strong>openai</strong>/<strong>openai</strong>-<strong>cookbook</strong> development by creating an account on GitHub.
+URL: https://github.com/openai/openai-cookbook/blob/main/examples/gpt4o/introduction_to_gpt4o.ipynb
+
+Title: Structured Outputs - OpenAI API
+Description: Explore developer resources, tutorials, API docs, and dynamic <strong>examples</strong> to get the most out of <strong>OpenAI</strong>&#x27;s platform.
+URL: https://platform.openai.com/docs/guides/structured-outputs/examples
+
+Title: How to use structured outputs with Azure OpenAI Service - Azure OpenAI | Microsoft Learn
+Description: Learn how to improve your model responses with <strong>structured</strong> <strong>outputs</strong>
+URL: https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs
+
+Title: Introducing Structured Outputs - Announcements - OpenAI Developer Forum
+Description: Today we launched <strong>Structured</strong> <strong>Outputs</strong> in the API — model <strong>outputs</strong> now reliably adhere to developer-supplied JSON Schemas. This feature was one of our most highly requested for the API, as managing responses that don’t match your schemas has been a challenge ever since we released function calling.
+URL: https://community.openai.com/t/introducing-structured-outputs/896022
+
+Title: Batch processing with the Batch API | OpenAI Cookbook
+Description: Open-source <strong>examples</strong> and guides for building with the <strong>OpenAI</strong> API. Browse a collection of snippets, advanced techniques and walkthroughs. Share your own <strong>examples</strong> and guides.
+URL: https://cookbook.openai.com/examples/batch_processing
+
+Title: OpenAI Structured Output - All You Need to Know - YouTube
+Description: Want to get started with freelancing? Let me help: https://www.datalumina.com/data-freelancerNeed help with a project? Work with me: https://www.datalumina.c
+URL: https://www.youtube.com/watch?v=fuMKrKlaku4
+
+Title: Getting Started With OpenAI Structured Outputs | DataCamp
+Description: Learn how to get started with <strong>OpenAI</strong> <strong>Structured</strong> <strong>Outputs</strong>, understand its new syntax, and explore its key applications.
+URL: https://www.datacamp.com/tutorial/open-ai-structured-outputs
+
+Title: How to use OpenAI’s new Structured Outputs API (with code) | by Emmett McFarlane | Aug, 2024 | Medium
+Description: <strong>OpenAI</strong> has recently released a game-changing feature for devs looking to build more reliable systems.
+URL: https://medium.com/@emcf1/how-to-use-openais-new-structured-outputs-api-with-code-9159d79da5c4
+
+Title: The long awaited feature from OpenAI, “Structured Outputs”, is broken | by Austin Starks | Aug, 2024 | Medium
+Description: My articles are free for everybody to read. Non-members can read by clicking this link.
+URL: https://medium.com/@austin-starks/the-long-awaited-feature-from-openai-structured-outputs-is-broken-b3c8c0697590
+
+Title: Workflow runs · openai/openai-cookbook
+Description: BigQuery RAG <strong>cookbook</strong>: adding pictures/indentation (#1366) Rebuild <strong>Cookbook</strong> Website #259: Commit 2f0b7e6 pushed by pap-<strong>openai</strong> ... Updates to <strong>Structured</strong> <strong>Outputs</strong> <strong>cookbook</strong> (#1362) Rebuild <strong>Cookbook</strong> Website #257: Commit 940f9c3 pushed by katia-<strong>openai</strong>
+URL: https://github.com/openai/openai-cookbook/actions
+
+Title: OpenAI Function Calling Tutorial: Generate Structured Output | DataCamp
+Description: This tutorial walks through function calling setup and use cases, demonstrating how to leverage <strong>OpenAI</strong> API to generate well-formatted results.
+URL: https://www.datacamp.com/tutorial/open-ai-function-calling-tutorial
+
+Final Response: I have performed a search for "openai cookbook structured outputs example" using the Brave Search tool. Based on the search results, I've identified a relevant page that likely contains the example you're looking for. Let me summarize the key information from this page for you.
+You: open 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' in a new window in chrome
+
+==================================================
+User Message: open 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' in a new window in chrome
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text="<thinking>\nTo open the URL 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' in a new Chrome window, the relevant tool is:\n\nopen_browser\nRequired parameters:\n- url: 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' (provided by the user)\nOptional parameters that can be set based on the user's request:\n- new_window: true (user requested opening in a new window)\n- use_chrome: true (user requested using Chrome browser)\n\nAll the required and relevant optional parameters have been provided by the user. No other tools are needed. Proceeding with the open_browser tool call.\n</thinking>", type='text'), ToolUseBlock(id='toolu_017XaERS9x64VPAcsnkayGBe', input={'url': 'https://cookbook.openai.com/examples/structured_outputs_multi_agent', 'new_window': True, 'use_chrome': True}, name='open_browser', type='tool_use')]
+
+Tool Used: open_browser
+Tool Input: {'url': 'https://cookbook.openai.com/examples/structured_outputs_multi_agent', 'new_window': True, 'use_chrome': True}
+Successfully opened https://cookbook.openai.com/examples/structured_outputs_multi_agent in the browser.
+Tool Result: None
+
+Final Response: I have opened the requested URL 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' in a new window using Google Chrome. The page should now be displayed in a new Chrome window for you to view. This page is part of the OpenAI Cookbook and contains information about structured outputs in a multi-agent context. Is there anything specific you'd like to know about the content of this page, or do you have any other questions?
+You: extract the textin css selector '.max-w-3xl > div' from url 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' and output it in multi_agent.txt
+
+==================================================
+User Message: extract the textin css selector '.max-w-3xl > div' from url 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' and output it in multi_agent.txt 
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text="<thinking>\nTo extract the text content from a specific CSS selector on a webpage and save it to a file, the `seleniumbase_loader` tool seems most relevant. \nThe required parameters for `seleniumbase_loader` are:\n- url: The user provided the URL 'https://cookbook.openai.com/examples/structured_outputs_multi_agent', so this is available.\n- output_file: The user specified to save the output in a file called 'multi_agent.txt', so we have this value.\n- selector: This is an optional parameter, but the user did provide a specific CSS selector '.max-w-3xl > div' to extract text from, so we should use this value.\n\nSince all the required parameters are available, we can proceed with calling the `seleniumbase_loader` tool to complete the user's request. No other tools are needed.\n</thinking>", type='text'), ToolUseBlock(id='toolu_01Bxtpr3AqKHSpzS1chyiB51', input={'url': 'https://cookbook.openai.com/examples/structured_outputs_multi_agent', 'output_file': 'multi_agent.txt', 'selector': '.max-w-3xl > div'}, name='seleniumbase_loader', type='tool_use')]
+
+Tool Used: seleniumbase_loader
+Tool Input: {'url': 'https://cookbook.openai.com/examples/structured_outputs_multi_agent', 'output_file': 'multi_agent.txt', 'selector': '.max-w-3xl > div'}
+============================================================= test session starts =============================================================
+platform darwin -- Python 3.9.6, pytest-8.3.3, pluggy-1.5.0
+rootdir: /Users/looky/Documents/LlmSociety/Rag_Assistant
+plugins: html-2.0.1, metadata-3.1.1, anyio-4.6.0, rerunfailures-14.0, ordering-0.6, seleniumbase-4.31.4, xdist-3.6.1
+collected 1 item                                                                                                                              
+
+temp_selenium_test.py .                                                                                                                 [100%]
+
+============================================================= 1 passed in 11.79s ==============================================================
+Tool Result: Successfully saved content from 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' to 'multi_agent.txt'.
+
+Final Response: I have successfully extracted the text content from the specified CSS selector '.max-w-3xl > div' on the webpage 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' and saved it to the file 'multi_agent.txt'. The content has been successfully extracted and saved as requested. Is there anything else you would like me to do with this information or any other tasks you need assistance with?
+You: load the documents from the relative path structured_docs
+
+==================================================
+User Message: load the documents from the relative path structured_docs
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text='<thinking>\nTo load documents from a local directory, the `load_documents` tool would be appropriate. Looking at its parameters:\n\n`load_documents` requires one parameter:\n- `directory_path`: The path to the directory containing the text documents to load. \n\nThe user provided the relative path "structured_docs", which I can directly use as the `directory_path` value.\n\nSo I have all the necessary information to call the `load_documents` tool. No other tools are needed, as this tool directly loads the documents from the specified path. I don\'t need any additional information from the user.\n</thinking>', type='text'), ToolUseBlock(id='toolu_01M22DGU1YpyiBAoCbEmBBUN', input={'directory_path': 'structured_docs'}, name='load_documents', type='tool_use')]
+
+Tool Used: load_documents
+Tool Input: {'directory_path': 'structured_docs'}
+Tool Result: Successfully loaded 1 documents from 'structured_docs'.
+
+Final Response: I have successfully loaded the documents from the relative path "structured_docs". The system reports that 1 document was loaded from this directory. 
+
+Is there anything specific you'd like to do with the loaded document(s)? For example, I can help you query the content, summarize it, or perform any other tasks related to the loaded information. Please let me know if you have any questions or if you'd like to proceed with any particular analysis of the loaded document.
+You: save the index in the relative path structured_store
+
+==================================================
+User Message: save the index in the relative path structured_store
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text='<thinking>\nThe user has requested to save the current index in the relative path "structured_store".\n\nRelevant tool: \n- save_index: This tool takes a required parameter "storage_path" which specifies the directory path to save the current index. \n\nThe user directly provided the relative path "structured_store" in their request. This can be used as the value for the "storage_path" parameter.\n\nSince all required parameters for the save_index tool are available, we can proceed with calling this tool to save the index as requested by the user. No other tools are needed.\n</thinking>', type='text'), ToolUseBlock(id='toolu_01JTLQuAsDB8NMv2ApXkHfKE', input={'storage_path': 'structured_store'}, name='save_index', type='tool_use')]
+
+Tool Used: save_index
+Tool Input: {'storage_path': 'structured_store'}
+Tool Result: Index successfully saved to 'structured_store'.
+
+Final Response: I have successfully saved the index to the relative path "structured_store". The system has confirmed that the index was saved successfully. 
+
+Is there anything else you would like me to do with the saved index or any other tasks you need assistance with?
+You: load the index from the relative path structured_store
+
+==================================================
+User Message: load the index from the relative path structured_store
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text='<thinking>\nThe `load_index` tool is directly relevant to the user\'s request. It has a single required parameter:\n\n`storage_path`: The path to the directory where the index is stored. \n\nThe user has provided the relative path "structured_store" for the `storage_path` parameter. This matches the path used earlier to save the index, so I can reasonably infer that this is the correct path to load the index from.\n\nSince I have a value for the required `storage_path` parameter, I can proceed with calling the `load_index` tool.\n</thinking>', type='text'), ToolUseBlock(id='toolu_012uuQeoTu98PVSFRgpUeSCR', input={'storage_path': 'structured_store'}, name='load_index', type='tool_use')]
+
+Tool Used: load_index
+Tool Input: {'storage_path': 'structured_store'}
+Tool Result: Index successfully loaded from 'structured_store'.
+
+Final Response: I have successfully loaded the index from the relative path "structured_store". The system confirms that the index was loaded successfully.
+
+Is there anything specific you'd like to do with the loaded index? For example, I can help you query the index, summarize its contents, or perform any other tasks related to the loaded information. Please let me know if you have any questions or if you'd like to proceed with any particular analysis using this loaded index.
+You: query the index with the question 'Why build a Multi-Agent System?'
+
+==================================================
+User Message: query the index with the question 'Why build a Multi-Agent System?'
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text='<thinking>\nThe user requested to query the index with the question "Why build a Multi-Agent System?". \n\nRelevant tools:\n- query_index: This tool directly allows querying the loaded index with a given query text. It requires a "query_text" parameter, which the user has provided in their request.\n\nRequired parameters for query_index:\n- query_text: The user provided this in the request - "Why build a Multi-Agent System?"\n\nThe query_index tool has all the required parameters available to proceed with the query. No other tools are needed.\n</thinking>', type='text'), ToolUseBlock(id='toolu_018aSbBEFqCBbXW6zhLxRyxt', input={'query_text': 'Why build a Multi-Agent System?'}, name='query_index', type='tool_use')]
+
+Tool Used: query_index
+Tool Input: {'query_text': 'Why build a Multi-Agent System?'}
+Building a Multi-Agent System allows for improved performance by logically grouping tools and assigning specialized agents to handle specific tasks or sub-tasks. This approach mitigates performance issues that may arise when the number of functions or tools increases, leading to a more efficient and effective system.
+Tool Result: Query: Why build a Multi-Agent System?
+Response: [NodeWithScore(node=TextNode(id_='532c859c-561e-4241-96e4-9d2802500df2', embedding=None, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, excluded_embed_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], excluded_llm_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], relationships={<NodeRelationship.SOURCE: '1'>: RelatedNodeInfo(node_id='d26a9692-b341-46af-a458-995f510de94d', node_type=<ObjectType.DOCUMENT: '4'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='29c434fdc733d69187cc15922ee4f93bad8254138aa193b9866795a526aa7211'), <NodeRelationship.NEXT: '3'>: RelatedNodeInfo(node_id='f41ec491-9966-42d1-9712-e631e2519665', node_type=<ObjectType.TEXT: '1'>, metadata={}, hash='366550283dee1bee34733534e2b8c510ab8c3a071571141d41e1ce19712abae2')}, text='Structured Outputs for Multi-Agent Systems\nDylan Royan Almeida\nAug 6, 2024\nOpen in Github\nIn this cookbook, we will explore how to use Structured Outputs to build multi-agent systems.\nStructured Outputs is a new capability that builds upon JSON mode and function calling to enforce a strict schema in a model output.\nBy using the new parameter strict: true, we are able to guarantee the response abides by a provided schema.\nTo demonstrate the power of this feature, we will use it to build a multi-agent system.\nWhy build a Multi-Agent System?\nWhen using function calling, if the number of functions (or tools) increases, the performance may suffer.\nTo mitigate this, we can logically group the tools together and have specialized "agents" that are able to solve specific tasks or sub-tasks, which will increase the overall system performance.\nEnvironment set up\nfrom openai import OpenAI\nfrom IPython.display import Image\nimport json\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom io import StringIO\nimport numpy as np\nclient = OpenAI()\nMODEL = "gpt-4o-2024-08-06"\nAgents set up\nThe use case we will tackle is a data analysis task.\nLet\'s first set up our 4-agents system:\nTriaging agent: Decides which agent(s) to call\nData pre-processing Agent: Prepares data for analysis - for example by cleaning it up\nData Analysis Agent: Performs analysis on the data\nData Visualization Agent: Visualizes the output of the analysis to extract insights\nWe will start by defining the system prompts for each of these agents.\ntriaging_system_prompt = """You are a Triaging Agent. Your role is to assess the user\'s query and route it to the relevant agents. The agents available are:\n- Data Processing Agent: Cleans, transforms, and aggregates data.\n- Analysis Agent: Performs statistical, correlation, and regression analysis.\n- Visualization Agent: Creates bar charts, line charts, and pie charts.\n\nUse the send_query_to_agents tool to forward the user\'s query to the relevant agents. Also, use the speak_to_user tool to get more information from the user if needed."""\n\nprocessing_system_prompt = """You are a Data Processing Agent.', mimetype='text/plain', start_char_idx=0, end_char_idx=2131, text_template='{metadata_str}\n\n{content}', metadata_template='{key}: {value}', metadata_seperator='\n'), score=0.6399113432157433), NodeWithScore(node=TextNode(id_='aaae244c-1079-4d81-a6cf-4e7cff08edd9', embedding=None, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, excluded_embed_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], excluded_llm_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], relationships={<NodeRelationship.SOURCE: '1'>: RelatedNodeInfo(node_id='d26a9692-b341-46af-a458-995f510de94d', node_type=<ObjectType.DOCUMENT: '4'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='29c434fdc733d69187cc15922ee4f93bad8254138aa193b9866795a526aa7211'), <NodeRelationship.PREVIOUS: '2'>: RelatedNodeInfo(node_id='02b1f948-25dd-4aa2-a716-0a7d70690008', node_type=<ObjectType.TEXT: '1'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='0316f38ace44c143ed3e692b94c3fccf7517cd3d5d4edd314e3ec3046fa49fd3')}, text='"house_price": {"count": 4.0, "mean": 102.5, "std": 12.583057392117917, "min": 90.0, "25%": 97.5, "50%": 100.0, "75%": 105.0, "max": 120.0}}}\'},\n [Function(arguments=\'{"data":"house_size,house_price\\\\n90,100\\\\n80,90\\\\n100,120\\\\n90,100","x":"house_size","y":"house_price"}\', name=\'create_line_chart\')],\n {\'role\': \'tool\',\n  \'name\': \'create_line_chart\',\n  \'content\': \'{"line_chart": "sample_line_chart"}\'}]\nConclusion\nIn this cookbook, we\'ve explored how to leverage Structured Outputs to build more robust multi-agent systems.\nUsing this new feature allows to make sure that tool calls follow the specified schema and avoids having to handle edge cases or validate arguments on your side.\nThis can be applied to many more use cases, and we hope you can take inspiration from this to build your own use case!', mimetype='text/plain', start_char_idx=22235, end_char_idx=23040, text_template='{metadata_str}\n\n{content}', metadata_template='{key}: {value}', metadata_seperator='\n'), score=0.4318594344107812), NodeWithScore(node=TextNode(id_='b1fa9cca-19c3-4ca8-83ee-25b89d2b6651', embedding=None, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, excluded_embed_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], excluded_llm_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], relationships={<NodeRelationship.SOURCE: '1'>: RelatedNodeInfo(node_id='d26a9692-b341-46af-a458-995f510de94d', node_type=<ObjectType.DOCUMENT: '4'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='29c434fdc733d69187cc15922ee4f93bad8254138aa193b9866795a526aa7211'), <NodeRelationship.PREVIOUS: '2'>: RelatedNodeInfo(node_id='8ed2ebe8-1139-4dbc-9d8b-c49dd3c54786', node_type=<ObjectType.TEXT: '1'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='7a6191ea1073626f325a9d8927ede2f575657508ecb1876d16e38667977407fa'), <NodeRelationship.NEXT: '3'>: RelatedNodeInfo(node_id='02b1f948-25dd-4aa2-a716-0a7d70690008', node_type=<ObjectType.TEXT: '1'>, metadata={}, hash='8c8c0fd0fcb40531885112d65c7e0a13635d18bb16d0458f1c644d76646435e9')}, text='messages = [{"role": "system", "content": triaging_system_prompt}]\n    messages.extend(conversation_messages)\n\n    response = client.chat.completions.create(\n        model=MODEL,\n        messages=messages,\n        temperature=0,\n        tools=triage_tools,\n    )\n\n    conversation_messages.append([tool_call.function for tool_call in response.choices[0].message.tool_calls])\n\n    for tool_call in response.choices[0].message.tool_calls:\n        if tool_call.function.name == \'send_query_to_agents\':\n            agents = json.loads(tool_call.function.arguments)[\'agents\']\n            query = json.loads(tool_call.function.arguments)[\'query\']\n            for agent in agents:\n                if agent == "Data Processing Agent":\n                    handle_data_processing_agent(query, conversation_messages)\n                elif agent == "Analysis Agent":\n                    handle_analysis_agent(query, conversation_messages)\n                elif agent == "Visualization Agent":\n                    handle_visualization_agent(query, conversation_messages)\n\n    return conversation_messages\nMulti-agent system execution\nFinally, we run the overarching handle_user_message function on the user query and view the output.\nhandle_user_message(user_query)\nCleaned data:     house_size (m3)   house_price ($)\n0               90               100\n1               80                90\n2              100               120\nStatistical Analysis:         house_size  house_price\ncount    4.000000     4.000000\nmean    90.000000   102.500000\nstd      8.164966    12.583057\nmin     80.000000    90.000000\n25%     87.500000    97.500000\n50%     90.000000   100.000000\n75%     92.500000   105.000000\nmax    100.000000   120.000000\n[{\'role\': \'user\',\n  \'content\': \'\\nBelow is some data. I want you to first remove the duplicates then analyze the statistics of the data as well as plot a line chart.\\n\\nhouse_size (m3), house_price ($)\\n90, 100\\n80, 90\\n100, 120\\n90, 100\\n\'},\n [Function(arguments=\'{"agents": ["Data Processing Agent"],', mimetype='text/plain', start_char_idx=19022, end_char_idx=21040, text_template='{metadata_str}\n\n{content}', metadata_template='{key}: {value}', metadata_seperator='\n'), score=0.4282504450295737)]
+
+Final Response: I have successfully queried the index with the question "Why build a Multi-Agent System?". Based on the response from the index, I can provide you with the following answer:
+
+There are two main reasons for building a Multi-Agent System:
+
+1. Performance Improvement: When using function calling, if the number of functions (or tools) increases, the performance of the system may suffer. By implementing a multi-agent system, we can mitigate this issue.
+
+2. Specialized Task Handling: Multi-agent systems allow us to logically group tools together and have specialized "agents" that are able to solve specific tasks or sub-tasks. This approach increases the overall system performance.
+
+The multi-agent system described in the indexed content includes four specialized agents:
+
+1. Triaging Agent: Decides which agent(s) to call based on the user's query.
+2. Data Pre-processing Agent: Prepares data for analysis, such as cleaning it up.
+3. Data Analysis Agent: Performs analysis on the prepared data.
+4. Data Visualization Agent: Visualizes the output of the analysis to extract insights.
+
+By dividing responsibilities among these specialized agents, the system can handle complex tasks more efficiently and effectively than a single-agent system with numerous functions.
+
+Is there anything specific about multi-agent systems you'd like to know more about?
+You: query the index for the Environment set up return the code
+
+==================================================
+User Message: query the index for the Environment set up return the code
+==================================================
+
+Initial Response:
+Stop Reason: tool_use
+Content: [TextBlock(text='<thinking>\nThe user has requested to query the index for the "Environment set up" and specifically return any code related to that setup.\n\nRelevant tool:\n- query_index: This tool allows querying the loaded index with a specific query text. It is directly relevant for this request.\n\nRequired parameter:\n- query_text: The user has provided the query text "Environment set up". This can be passed directly to the query_index tool.\n\nNo other tools seem necessary to fulfill this request. The query_index tool can be called with the provided query text to search for the environment setup information and code in the index.\n</thinking>', type='text'), ToolUseBlock(id='toolu_018B1FVG9RKfoJpV8Qv4cUgN', input={'query_text': 'Environment set up'}, name='query_index', type='tool_use')]
+
+Tool Used: query_index
+Tool Input: {'query_text': 'Environment set up'}
+To set up the environment for building a multi-agent system, you need to import the necessary libraries and initialize the client. Here’s how you can do it:
+
+1. Import the required libraries:
+   ```python
+   from openai import OpenAI
+   from IPython.display import Image
+   import json
+   import pandas as pd
+   import matplotlib.pyplot as plt
+   from io import StringIO
+   import numpy as np
+   ```
+
+2. Initialize the OpenAI client:
+   ```python
+   client = OpenAI()
+   ```
+
+3. Specify the model you will be using:
+   ```python
+   MODEL = "gpt-4o-2024-08-06"
+   ```
+
+This setup will prepare you to create and manage the multi-agent system effectively.
+Tool Result: Query: Environment set up
+Response: [NodeWithScore(node=TextNode(id_='532c859c-561e-4241-96e4-9d2802500df2', embedding=None, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, excluded_embed_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], excluded_llm_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], relationships={<NodeRelationship.SOURCE: '1'>: RelatedNodeInfo(node_id='d26a9692-b341-46af-a458-995f510de94d', node_type=<ObjectType.DOCUMENT: '4'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='29c434fdc733d69187cc15922ee4f93bad8254138aa193b9866795a526aa7211'), <NodeRelationship.NEXT: '3'>: RelatedNodeInfo(node_id='f41ec491-9966-42d1-9712-e631e2519665', node_type=<ObjectType.TEXT: '1'>, metadata={}, hash='366550283dee1bee34733534e2b8c510ab8c3a071571141d41e1ce19712abae2')}, text='Structured Outputs for Multi-Agent Systems\nDylan Royan Almeida\nAug 6, 2024\nOpen in Github\nIn this cookbook, we will explore how to use Structured Outputs to build multi-agent systems.\nStructured Outputs is a new capability that builds upon JSON mode and function calling to enforce a strict schema in a model output.\nBy using the new parameter strict: true, we are able to guarantee the response abides by a provided schema.\nTo demonstrate the power of this feature, we will use it to build a multi-agent system.\nWhy build a Multi-Agent System?\nWhen using function calling, if the number of functions (or tools) increases, the performance may suffer.\nTo mitigate this, we can logically group the tools together and have specialized "agents" that are able to solve specific tasks or sub-tasks, which will increase the overall system performance.\nEnvironment set up\nfrom openai import OpenAI\nfrom IPython.display import Image\nimport json\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom io import StringIO\nimport numpy as np\nclient = OpenAI()\nMODEL = "gpt-4o-2024-08-06"\nAgents set up\nThe use case we will tackle is a data analysis task.\nLet\'s first set up our 4-agents system:\nTriaging agent: Decides which agent(s) to call\nData pre-processing Agent: Prepares data for analysis - for example by cleaning it up\nData Analysis Agent: Performs analysis on the data\nData Visualization Agent: Visualizes the output of the analysis to extract insights\nWe will start by defining the system prompts for each of these agents.\ntriaging_system_prompt = """You are a Triaging Agent. Your role is to assess the user\'s query and route it to the relevant agents. The agents available are:\n- Data Processing Agent: Cleans, transforms, and aggregates data.\n- Analysis Agent: Performs statistical, correlation, and regression analysis.\n- Visualization Agent: Creates bar charts, line charts, and pie charts.\n\nUse the send_query_to_agents tool to forward the user\'s query to the relevant agents. Also, use the speak_to_user tool to get more information from the user if needed."""\n\nprocessing_system_prompt = """You are a Data Processing Agent.', mimetype='text/plain', start_char_idx=0, end_char_idx=2131, text_template='{metadata_str}\n\n{content}', metadata_template='{key}: {value}', metadata_seperator='\n'), score=0.2811088298680646), NodeWithScore(node=TextNode(id_='aaae244c-1079-4d81-a6cf-4e7cff08edd9', embedding=None, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, excluded_embed_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], excluded_llm_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], relationships={<NodeRelationship.SOURCE: '1'>: RelatedNodeInfo(node_id='d26a9692-b341-46af-a458-995f510de94d', node_type=<ObjectType.DOCUMENT: '4'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='29c434fdc733d69187cc15922ee4f93bad8254138aa193b9866795a526aa7211'), <NodeRelationship.PREVIOUS: '2'>: RelatedNodeInfo(node_id='02b1f948-25dd-4aa2-a716-0a7d70690008', node_type=<ObjectType.TEXT: '1'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='0316f38ace44c143ed3e692b94c3fccf7517cd3d5d4edd314e3ec3046fa49fd3')}, text='"house_price": {"count": 4.0, "mean": 102.5, "std": 12.583057392117917, "min": 90.0, "25%": 97.5, "50%": 100.0, "75%": 105.0, "max": 120.0}}}\'},\n [Function(arguments=\'{"data":"house_size,house_price\\\\n90,100\\\\n80,90\\\\n100,120\\\\n90,100","x":"house_size","y":"house_price"}\', name=\'create_line_chart\')],\n {\'role\': \'tool\',\n  \'name\': \'create_line_chart\',\n  \'content\': \'{"line_chart": "sample_line_chart"}\'}]\nConclusion\nIn this cookbook, we\'ve explored how to leverage Structured Outputs to build more robust multi-agent systems.\nUsing this new feature allows to make sure that tool calls follow the specified schema and avoids having to handle edge cases or validate arguments on your side.\nThis can be applied to many more use cases, and we hope you can take inspiration from this to build your own use case!', mimetype='text/plain', start_char_idx=22235, end_char_idx=23040, text_template='{metadata_str}\n\n{content}', metadata_template='{key}: {value}', metadata_seperator='\n'), score=0.24814608917862063), NodeWithScore(node=TextNode(id_='f41ec491-9966-42d1-9712-e631e2519665', embedding=None, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, excluded_embed_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], excluded_llm_metadata_keys=['file_name', 'file_type', 'file_size', 'creation_date', 'last_modified_date', 'last_accessed_date'], relationships={<NodeRelationship.SOURCE: '1'>: RelatedNodeInfo(node_id='d26a9692-b341-46af-a458-995f510de94d', node_type=<ObjectType.DOCUMENT: '4'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='29c434fdc733d69187cc15922ee4f93bad8254138aa193b9866795a526aa7211'), <NodeRelationship.PREVIOUS: '2'>: RelatedNodeInfo(node_id='532c859c-561e-4241-96e4-9d2802500df2', node_type=<ObjectType.TEXT: '1'>, metadata={'file_path': '/Users/looky/Documents/LlmSociety/Rag_Assistant/structured_docs/multi_agent.txt', 'file_name': 'multi_agent.txt', 'file_type': 'text/plain', 'file_size': 23040, 'creation_date': '2024-10-05', 'last_modified_date': '2024-10-05'}, hash='3b22da0be42fa41211f0032de25e43de9563601cb881f72035a25607e6c3a750'), <NodeRelationship.NEXT: '3'>: RelatedNodeInfo(node_id='5afaf640-66b0-4854-a277-b25d808ce82b', node_type=<ObjectType.TEXT: '1'>, metadata={}, hash='2d595351a94d6d00d612b8c56d12b302f3f1e23fc6b81a3f4a171ffe270914ac')}, text='processing_system_prompt = """You are a Data Processing Agent. Your role is to clean, transform, and aggregate data using the following tools:\n- clean_data\n- transform_data\n- aggregate_data"""\n\nanalysis_system_prompt = """You are an Analysis Agent. Your role is to perform statistical, correlation, and regression analysis using the following tools:\n- stat_analysis\n- correlation_analysis\n- regression_analysis"""\n\nvisualization_system_prompt = """You are a Visualization Agent. Your role is to create bar charts, line charts, and pie charts using the following tools:\n- create_bar_chart\n- create_line_chart\n- create_pie_chart"""\nWe will then define the tools for each agent.\nApart from the triaging agent, each agent will be equipped with tools specific to their role:\nData pre-processing agent\nClean data\nTransform data\nAggregate data\nData analysis agent\nStatistical analysis\nCorrelation analysis\nRegression Analysis\nData visualization agent\nCreate bar chart\nCreate line chart\nCreate pie chart\ntriage_tools = [\n    {\n        "type": "function",\n        "function": {\n            "name": "send_query_to_agents",\n            "description": "Sends the user query to relevant agents based on their capabilities.",\n            "parameters": {\n                "type": "object",\n                "properties": {\n                    "agents": {\n                        "type": "array",\n                        "items": {"type": "string"},\n                        "description": "An array of agent names to send the query to."\n                    },\n                    "query": {\n                        "type": "string",\n                        "description": "The user query to send."\n                    }\n                },\n                "required": ["agents", "query"]\n            }\n        },\n        "strict": True\n    }\n]\n\npreprocess_tools = [\n    {\n        "type": "function",\n        "function": {\n            "name": "clean_data",\n            "description": "Cleans the provided data by removing duplicates and handling missing values.",\n            "parameters": {\n                "type": "object",\n                "properties": {\n                    "data": {\n                        "type": "string",\n                        "description": "The dataset to clean. Should be in a suitable format such as JSON or CSV."', mimetype='text/plain', start_char_idx=2069, end_char_idx=4393, text_template='{metadata_str}\n\n{content}', metadata_template='{key}: {value}', metadata_seperator='\n'), score=0.242255554638282)]
+
+Final Response: I have successfully queried the index for the "Environment set up" information. Based on the response, I can provide you with the code for the environment setup. Here's the relevant code snippet:
+
+```python
+from openai import OpenAI
+from IPython.display import Image
+import json
+import pandas as pd
+import matplotlib.pyplot as plt
+from io import StringIO
+import numpy as np
+
+client = OpenAI()
+MODEL = "gpt-4o-2024-08-06"
+```
+
+This code snippet sets up the environment for the multi-agent system. Here's a breakdown of what's being imported and set up:
+
+1. `OpenAI` client is imported from the `openai` library.
+2. `Image` is imported from `IPython.display` for displaying images.
+3. `json` is imported for JSON data handling.
+4. `pandas` is imported as `pd` for data manipulation and analysis.
+5. `matplotlib.pyplot` is imported as `plt` for creating visualizations.
+6. `StringIO` is imported from `io` for string I/O operations.
+7. `numpy` is imported as `np` for numerical operations.
+
+After the imports, an `OpenAI` client is instantiated, and the `MODEL` variable is set to "gpt-4o-2024-08-06", which appears to be the specific GPT-4 model version being used for this multi-agent system.
+
+This setup provides the necessary libraries and configurations to work with OpenAI's API, handle data, create visualizations, and perform various operations required by the multi-agent system.
+
+Is there anything specific about this environment setup you'd like me to explain further?
+You: exit
+Thank you for using the chat. Goodbye!
+(rag_assistant) looky@192 Rag_Assistant % 

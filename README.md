@@ -1,4 +1,3 @@
-
 # README for Demo Project: Claude 3.5 Agent with Tool Integration
 
 ## Project Title
@@ -26,8 +25,8 @@ The project is designed to demonstrate how a single AI agent can utilize a serie
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/claude-agent-tools-demo.git
-   cd claude-agent-tools-demo
+   git clone https://github.com/LookyLooks/rag-assistant.git
+   cd rag-assistant
    ```
 
 2. **Install the required dependencies**:
@@ -44,15 +43,19 @@ The project is designed to demonstrate how a single AI agent can utilize a serie
    export OPENAI_API_KEY=your_openai_api_key
    ```
 
-4. **Run the main chat interface**: 
-   Start the terminal chat interface to interact with the Claude 3.5 agent:
-
-   ```bash
-   python main.py
-   ```
+4. **Run the project**:
+   You have two options to run the project:
+   - **Terminal interface**:
+     ```bash
+     python main.py
+     ```
+   - **Chainlit frontend**:
+     ```bash
+     chainlit run chainlit_claude.py
+     ```
 
 ## How to Use the Project
-- Once the terminal interface is up and running, start by typing a research query, such as **“Look up OpenAI structured outputs”**.
+- Once the interface is up and running (either terminal or Chainlit), start by typing a research query, such as **“Look up OpenAI structured outputs”**.
 - The Claude 3.5 agent will:
   - Use `brave_search_tool` to find relevant web content.
   - Open a specific link in the browser using `open_browser` if requested.
@@ -90,34 +93,3 @@ The project is designed to demonstrate how a single AI agent can utilize a serie
 4. Load the document into LlamaIndex.
 5. Save and load the index for querying.
 6. Query the index for specific information, like benefits of structured outputs.
-
-## Query Example Before Final Response
-**User Query**: `Query the index for the Environment set up and return the code.`
-
-## Final Response for Query
-I have successfully queried the index for the "Environment set up" information. Based on the response, I can provide you with the code for the environment setup. Here's the relevant code snippet:
-
-```python
-from openai import OpenAI
-from IPython.display import Image
-import json
-import pandas as pd
-import matplotlib.pyplot as plt
-from io import StringIO
-import numpy as np
-
-client = OpenAI()
-MODEL = "gpt-4o-2024-08-06"
-```
-
-This code snippet sets up the environment for the multi-agent system. Here's a breakdown of what's being imported and set up:
-
-1. `OpenAI` client is imported from the `openai` library.
-2. `Image` is imported from `IPython.display` for displaying images.
-3. `json` is imported for JSON data handling.
-4. `pandas` is imported as `pd` for data manipulation and analysis.
-5. `matplotlib.pyplot` is imported as `plt` for creating visualizations.
-6. `StringIO` is imported from `io` for string I/O operations.
-7. `numpy` is imported as `np` for numerical operations.
-
-After the imports, an `OpenAI` client is instantiated, and the `MODEL` variable is set to "gpt-4o-2024-08-06", which appears to be the specific GPT-4 model version being used for this multi-agent system.

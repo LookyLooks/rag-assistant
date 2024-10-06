@@ -128,7 +128,7 @@ Final Response: I have opened the requested URL 'https://cookbook.openai.com/exa
 You: extract the textin css selector '.max-w-3xl > div' from url 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' and output it in multi_agent.txt
 
 ==================================================
-User Message: extract the textin css selector '.max-w-3xl > div' from url 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' and output it in multi_agent.txt 
+User Message: extract the text in css selector '.max-w-3xl > div' from url 'https://cookbook.openai.com/examples/structured_outputs_multi_agent' and output it in multi_agent.txt 
 ==================================================
 
 Initial Response:

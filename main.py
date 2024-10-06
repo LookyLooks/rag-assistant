@@ -14,6 +14,7 @@ from seleniumbase import BaseCase
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 
+
 # Global variables for query engine and index
 query_engine = None
 index = None
@@ -610,8 +611,7 @@ def handle_tool_use(tool_name, tool_input):
     else:
         return f"Error: Unknown tool '{tool_name}'"
 
-
 # Start the Chat Interface
 if __name__ == "__main__":
-    chat_interface()
-    
+    #chat_interface()
+    streamlit_chat_interface()
